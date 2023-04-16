@@ -25,7 +25,7 @@ class TPQueue {
     } else {
       int i = last - 1;
       bool f = 0;
-      while (i >= first && value.prior > container[i].prior) {
+      while (i >= first && value.prior > box[i].prior) {
         f = 1;
         box[i + 1] = box[i];
         box[i] = value;
